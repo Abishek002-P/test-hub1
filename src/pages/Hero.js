@@ -1,18 +1,27 @@
-import React from 'react';
+import firebase from "firebase/app";
+import { useHistory } from "react-router-dom";
 
-
-const Hero = ({ handleLogout }) => {
-    return (
-        <section className="hero">
-            <nav>
-                <h2>Welcome</h2>
-                <button onClick={handleLogout}>
-                    Logout
-                </button>
-            </nav>
-        </section>
-    )
+export default function Home() {
+  const history = useHistory();
+  function logout() {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        history.push("/");
+      })
+      .catch((error) => {});
+  }
+  return (
+    <>
+      <div className="landing-main">
+        <div className="text-center">
+          <h1>Home Page</h1>
+          <button className="btn btn-primary" onClick={logout}>
+            Logout
+          </button>
+        </div>
+      </div>
+    </>
+  );
 }
-
-
-export default Hero;
