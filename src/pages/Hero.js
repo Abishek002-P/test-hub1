@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <div className="landing-main">
         <div className="text-center">
-          <h1>Home Page</h1>
+          <h1>Hey Welcome to pattarai's workshopHub!</h1>
           <button className="btn btn-primary" onClick={logout}>
             Logout
           </button>
