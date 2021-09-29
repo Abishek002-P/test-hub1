@@ -1,5 +1,6 @@
 import firebase from "firebase/app";
 import { useHistory } from "react-router-dom";
+import LiveStream from "./LiveStream";
 
 export default function Home() {
   const history = useHistory();
@@ -20,6 +21,7 @@ export default function Home() {
           <button className="btn btn-primary" onClick={logout}>
             Logout
           </button>
+          <button onClick={LiveStream}> Live </button>
         </div>
       </div>
     </>
