@@ -22,6 +22,8 @@ export default function Home() {
             Logout
           </button>
           <button onClick={()=>{history.push("/live")}}> Live </button>
+          <button onClick={()=>{history.push("/record")}}>PRE</button>
+          
         </div>
       </div>
     </>

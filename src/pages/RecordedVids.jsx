@@ -3,9 +3,10 @@ import React from 'react'
 function RecordedVids() {
     return (
         <div>
-            Hey view our recorded vids here!
+         <h1>Hi Check out previous videos</h1>   
         </div>
     )
 }
 
 export default RecordedVids
+

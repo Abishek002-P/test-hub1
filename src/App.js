@@ -7,10 +7,10 @@ import {
 
 import LandingPage from "./pages/LandingPage";
 import Home from "./pages/Home";
-import Login from "./pages/login";
 import LiveStream from "./pages/LiveStream";
 import Error404 from "./pages/Error404";
 import PrivateRoute from "./PrivateRoute";
+import RecordedVids from "./pages/RecordedVids";
 
 
 export default function App() {
@@ -19,9 +19,9 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <PrivateRoute exact path="/home" component={Home} />
-        <Route exact path="/login" component={Login} />
         <Route exact path="/live" component={LiveStream} />
        <Route exact path="/404" component={Error404} />
+       <Route exact path="/record" component={RecordedVids} />
         <Redirect to="/404" />
       </Switch>
     </Router>
