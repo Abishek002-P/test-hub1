@@ -1,6 +1,6 @@
 .wave {
     position:absolute;
-    bottom:0;
+    bottom:1;
     left:0;
 }
 
@@ -8,8 +8,14 @@
     position:absolute;
     top: 1;
     right:0;
+    
 }
 
-div{
-    background-color: #032940;
+img{
+    position: relative;
+    top: -16px;
+    right: -706px;
+    
+
 }
+
